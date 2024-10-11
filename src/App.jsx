@@ -1,7 +1,21 @@
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import Catalogue from "./components/Catalogue";
+import ValuesOur from "./components/ValuesOur";
+import Events from "./components/Events";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <>
-      <h1>Angels Ethernal</h1>
+      <Navbar />
+      <Header />
+      <Catalogue />
+      <ValuesOur />
+      <Events />
+      <Contact />
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,33 @@
+/* header {
+    background-color: #4f8b33;
+} */
+nav {
+  background-color: #ffff;
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  /* margin-bottom: 20px; */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  color: #414141;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+a:hover {
+  color: #ffff;
+  background-color: #4f8b33;
+}
