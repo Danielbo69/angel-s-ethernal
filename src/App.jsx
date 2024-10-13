@@ -7,13 +7,14 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
+import { valuesOur } from "./data/data";
 
 function App() {
   return (
     <>
       <Navbars />
       <Header />
-      <ValuesOur />
+      <ValuesOur valuesOur={valuesOur}/>
       <Catalogue />
       <Events />
       <Contact />
