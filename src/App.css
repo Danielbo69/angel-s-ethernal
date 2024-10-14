@@ -60,7 +60,7 @@
 .headerRight hr {
   width: 50%;
   border-top: 3px solid #4f8b33;
-  opacity: none;
+  opacity: 1;
 }
 .headerRight p {
   width: 67%;
@@ -94,9 +94,8 @@
 }
 .valuesOur hr {
   width: 20%;
-  color: #4f8b33;
   border-top: 3px solid #4f8b33;
-  opacity: none;
+  opacity: 1;
 }
 
 .valuesOur .valuesOurContainer {

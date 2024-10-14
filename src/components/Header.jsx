@@ -1,9 +1,14 @@
+import { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import imgPrueba from "../assets/IMGPRUEBA.png";
 
 function Header() {
+  const [windowDimension, setWindowDimension] = useState({
+    innerWidth: window.innerWidth,
+  });
+
   const data = [
     {
       id: 1,
@@ -19,6 +24,25 @@ function Header() {
     },
   ];
 
+  const detectSize = () => {
+    setWindowDimension({ innerWidth: window.innerHeight });
+  };
+
+  useEffect(() => {
+    console.log(windowDimension)
+    window.addEventListener("resize", detectSize);
+    return () => window.removeEventListener("resize", detectSize);
+  }, [windowDimension]);
+
+  const positionAbsolute = {
+    position: "absolute",
+    marginTop: "-80px",
+  };
+  const porsitionBlock = {
+    position: "relative",
+    marginTop: "0px",
+  };
+
   return (
     <Container className="header">
       <Row>
@@ -26,18 +50,18 @@ function Header() {
           TOP
         </Col>
       </Row>
-      <Row style={{padding: "50px"
-      }}>
+      <Row style={{ padding: "50px" }}>
         <Col className="headerLeft" lg>
           <div
-            style={{
-              position: "absolute",
-              marginTop: "-80px"
-            }}
+            style={
+              windowDimension.innerWidth < 650
+                ? porsitionBlock
+                : positionAbsolute
+            }
           >
-            <div className="card d-lg-flex d-sm-none">
+            <div className="card">
               <img
-                style={{width: '100%', height: "100%", borderRadius: "15px" }}
+                style={{ width: "100%", height: "100%", borderRadius: "15px" }}
                 src={imgPrueba}
                 alt="prueba"
               />
