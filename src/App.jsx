@@ -14,6 +14,7 @@ function App() {
   const [windowDimension, setWindowDimension] = useState({
     innerWidth: window.innerWidth,
   });
+  const [renderProduct, setRenderProduct] = useState(15);
 
   const detectSize = () => {
     setWindowDimension({ innerWidth: window.innerHeight });
@@ -30,7 +31,7 @@ function App() {
       <Navbars />
       <Header windowDimension={windowDimension} />
       <ValuesOur valuesOur={valuesOur} />
-      <Catalogue productos={productos} />
+      <Catalogue productos={productos} renderProduct={renderProduct} setRenderProduct={setRenderProduct}/>
       <Events />
       <Contact />
       <Footer />
