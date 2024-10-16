@@ -1,74 +1,333 @@
+import imgProducto from '../assets/producto.jpg'
 export const productos = [
   {
     id: 1,
-    title: "",
-    description: "",
-    image: "",
-    category: "suplementos",
+    name: "Glucosamina",
+    type: "Supplement",
+    category: "Joint Health",
+    brand: "Angels Eternal",
+    image: imgProducto
   },
   {
     id: 2,
-    title: "",
-    description: "",
-    image: "",
-    category: "corporal",
+    name: "Omega 3 Fish Oil",
+    type: "Supplement",
+    category: "Heart Health",
+    brand: "Angels Eternal",
+    image: imgProducto
   },
   {
     id: 3,
-    title: "",
-    description: "",
-    image: "",
-    category: "suplementos",
+    name: "Magnesio",
+    type: "Supplement",
+    category: "Mineral",
+    brand: "Angels Eternal",
+    image: imgProducto
   },
   {
     id: 4,
-    title: "",
-    description: "",
-    image: "",
-    category: "corporal",
+    name: "Complejo B",
+    type: "Supplement",
+    category: "Vitamins",
+    brand: "Angels Eternal",
+    image: imgProducto
   },
   {
     id: 5,
-    title: "",
-    description: "",
-    image: "",
-    category: "suplementos",
+    name: "CQ10",
+    type: "Supplement",
+    category: "Antioxidant",
+    brand: "Angels Eternal",
+    image: imgProducto
   },
   {
     id: 6,
-    title: "",
-    description: "",
-    image: "",
-    category: "corporal",
+    name: "Prenatal",
+    type: "Supplement",
+    category: "Pregnancy Health",
+    brand: "Angels Eternal",
+    image: imgProducto
   },
   {
     id: 7,
-    title: "",
-    description: "",
-    image: "",
-    category: "suplementos",
+    name: "Probiótico",
+    type: "Supplement",
+    category: "Digestive Health",
+    brand: "Angels Eternal",
+    image: imgProducto
   },
   {
     id: 8,
-    title: "",
-    description: "",
-    image: "",
-    category: "corporal",
+    name: "Menopausia",
+    type: "Supplement",
+    category: "Women's Health",
+    brand: "Angels Eternal",
+    image: imgProducto
   },
   {
     id: 9,
-    title: "",
-    description: "",
-    image: "",
-    category: "suplementos",
+    name: "Gomitas Biotin",
+    type: "Gummies",
+    category: "Hair, Skin & Nails",
+    brand: "Angels Eternal",
+    image: imgProducto
   },
   {
     id: 10,
-    title: "",
-    description: "",
-    image: "",
-    category: "corporal",
+    name: "Gomitas para Niños",
+    type: "Gummies",
+    category: "Children's Health",
+    brand: "Angels Eternal",
+    image: imgProducto
   },
+  {
+    id: 11,
+    name: "Colágeno",
+    type: "Supplement",
+    category: "Skin Health",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 12,
+    name: "Vitamina C",
+    type: "Supplement",
+    category: "Immunity",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 13,
+    name: "Vitamina D3",
+    type: "Supplement",
+    category: "Bone Health",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 14,
+    name: "Zinc",
+    type: "Supplement",
+    category: "Immune Support",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 15,
+    name: "Próstata",
+    type: "Supplement",
+    category: "Men's Health",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 16,
+    name: "Multivitamínico",
+    type: "Supplement",
+    category: "General Health",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 17,
+    name: "Detox",
+    type: "Supplement",
+    category: "Detoxification",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 18,
+    name: "FastKeto",
+    type: "Supplement",
+    category: "Weight Management",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 19,
+    name: "CLA",
+    type: "Supplement",
+    category: "Weight Management",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 20,
+    name: "Cúrcuma",
+    type: "Supplement",
+    category: "Anti-inflammatory",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 21,
+    name: "Gel Limpiador",
+    type: "Skincare",
+    category: "Facial Cleanser",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 22,
+    name: "Tónico Facial",
+    type: "Skincare",
+    category: "Facial Toner",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 23,
+    name: "Crema Blanqueadora",
+    type: "Skincare",
+    category: "Whitening Cream",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 24,
+    name: "Vita Mask",
+    type: "Skincare",
+    category: "Face Mask",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 25,
+    name: "Crema Humectante",
+    type: "Skincare",
+    category: "Moisturizer",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 26,
+    name: "Ácido Hialurónico",
+    type: "Skincare",
+    category: "Hydration",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 27,
+    name: "Mascarilla",
+    type: "Haircare",
+    category: "Hair Mask",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 28,
+    name: "Shampoo y Acondicionador",
+    type: "Haircare",
+    category: "Hair Care",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 29,
+    name: "Gotas Mágicas",
+    type: "Haircare",
+    category: "Hair Serum",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 30,
+    name: "Stem Cells Serum",
+    type: "Haircare",
+    category: "Hair Growth",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 31,
+    name: "Shampoo al Seco",
+    type: "Haircare",
+    category: "Dry Shampoo",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 32,
+    name: "Anti Frizz",
+    type: "Haircare",
+    category: "Hair Treatment",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 33,
+    name: "Exfoliante",
+    type: "Skincare",
+    category: "Body Scrub",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 34,
+    name: "Gel de Baño",
+    type: "Bodycare",
+    category: "Shower Gel",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 35,
+    name: "Jabón Íntimo",
+    type: "Bodycare",
+    category: "Intimate Wash",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 36,
+    name: "Splash y Loción",
+    type: "Bodycare",
+    category: "Body Spray",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 37,
+    name: "Crema para Manos",
+    type: "Bodycare",
+    category: "Hand Cream",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 38,
+    name: "Shampoo de Piojos",
+    type: "Haircare",
+    category: "Lice Treatment",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 39,
+    name: "Crema para el Dolor",
+    type: "Bodycare",
+    category: "Pain Relief Cream",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 40,
+    name: "Árnica",
+    type: "Bodycare",
+    category: "Muscle Pain Relief",
+    brand: "Angels Eternal",
+    image: imgProducto
+  },
+  {
+    id: 41,
+    name: "Fingers Fresh",
+    type: "Essential Oil",
+    category: "Foot Freshener",
+    brand: "Angels Eternal",
+    image: imgProducto
+  }
 ];
 
 export const valuesOur = [

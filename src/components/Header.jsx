@@ -1,13 +1,11 @@
-import { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import imgPrueba from "../assets/IMGPRUEBA.png";
+import portada from "../assets/portada Original.jpg";
 
-function Header() {
-  const [windowDimension, setWindowDimension] = useState({
-    innerWidth: window.innerWidth,
-  });
+function Header({windowDimension}) {
+  
 
   const data = [
     {
@@ -24,19 +22,9 @@ function Header() {
     },
   ];
 
-  const detectSize = () => {
-    setWindowDimension({ innerWidth: window.innerHeight });
-  };
-
-  useEffect(() => {
-    console.log(windowDimension)
-    window.addEventListener("resize", detectSize);
-    return () => window.removeEventListener("resize", detectSize);
-  }, [windowDimension]);
-
   const positionAbsolute = {
     position: "absolute",
-    marginTop: "-80px",
+    marginTop: "-120px",
   };
   const porsitionBlock = {
     position: "relative",
@@ -47,7 +35,7 @@ function Header() {
     <Container className="header">
       <Row>
         <Col className="headerTop" lg={12}>
-          TOP
+          <img src={portada} alt="Portada"/>
         </Col>
       </Row>
       <Row style={{ padding: "50px" }}>

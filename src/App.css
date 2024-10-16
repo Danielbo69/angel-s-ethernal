@@ -32,9 +32,12 @@
 }
 
 .headerTop {
-  height: 400px;
-  background-color: #4f8b33;
+  padding: 0px;
 }
+.headerTop img {
+  width: 100%;
+}
+
 .headerLeft {
   height: 100%;
   display: flex;
@@ -42,7 +45,7 @@
 }
 .headerLeft .card {
   width: 450px;
-  height: 500px;
+  height: 575px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,6 +77,7 @@
 
 .valuesOur {
   height: 100%;
+  margin-top: 3rem;
   text-align: center;
   background: rgb(79, 139, 51);
   background: linear-gradient(
@@ -152,4 +156,45 @@
 }
 .valuesOur .card P {
   font-size: 10px;
+}
+
+/* Catalogue */
+
+.catalogue {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+  place-content: center;
+}
+.catalogue .card h5 {
+  color: #4f8b33;
+  font-size: medium;
+  font-weight: bold;
+  margin: 0px;
+}
+.catalogue .card p {
+  font-size: small;
+  font-weight: bold;
+}
+
+/* Medias Query */
+
+@media (max-width: 768px) {
+  .valuesOur .valuesOurContainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "card1 card2 card3" "card4 card5 card6";
+  }
+  .catalogue {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 650px) {
+  .valuesOur .valuesOurContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "card1 card2" "card3 card4" "card5 card6";
+  }
+  .catalogue {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
