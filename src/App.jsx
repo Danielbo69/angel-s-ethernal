@@ -21,7 +21,6 @@ function App() {
   };
 
   useEffect(() => {
-    console.log(windowDimension);
     window.addEventListener("resize", detectSize);
     return () => window.removeEventListener("resize", detectSize);
   }, [windowDimension]);
