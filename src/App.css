@@ -324,6 +324,9 @@
   }
 }
 @media (max-width: 650px) {
+  .headerBottom .headerRight .mision-vision hr {
+    width: 70%;
+  }
   .headerBottom {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -353,8 +356,14 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "card1" "card2" "card3" "card4" "card5" "card6";
   }
+  .valuesOur hr {
+    width: 70%;
+  }
   .catalogue {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .catalogueButton {
+    margin: 0rem;
   }
   .contacto {
     grid-template-columns: repeat(1, 1fr);
