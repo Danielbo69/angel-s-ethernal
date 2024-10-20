@@ -1,4 +1,20 @@
-import imgProducto from '../assets/producto.jpg'
+import imgProducto from "../assets/producto.jpg";
+
+export const headerData = [
+  {
+    id: 1,
+    title: "Misión",
+    description:
+      "Ser la marca líder en suplementos, vitaminas y productos de cuidado corporal en Venezuela, con la más alta calidad promoviendo la salud y bienestar de las personas, inspirándolas a descubrir y cultivar su belleza integral.",
+  },
+  {
+    id: 2,
+    title: "Visión",
+    description:
+      "Proveemos salud y belleza a toda Venezuela con suplementos, vitaminas y productos de cuidado corporal importados y de alta calidad.",
+  },
+];
+
 export const productos = [
   {
     id: 1,
@@ -6,7 +22,7 @@ export const productos = [
     type: "Suplementos",
     category: "Joint Health",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 2,
@@ -14,7 +30,7 @@ export const productos = [
     type: "Suplementos",
     category: "Heart Health",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 3,
@@ -22,7 +38,7 @@ export const productos = [
     type: "Suplementos",
     category: "Mineral",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 4,
@@ -30,7 +46,7 @@ export const productos = [
     type: "Suplementos",
     category: "Vitamins",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 5,
@@ -38,7 +54,7 @@ export const productos = [
     type: "Suplementos",
     category: "Antioxidant",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 6,
@@ -46,7 +62,7 @@ export const productos = [
     type: "Suplementos",
     category: "Pregnancy Health",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 7,
@@ -54,7 +70,7 @@ export const productos = [
     type: "Suplementos",
     category: "Digestive Health",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 8,
@@ -62,7 +78,7 @@ export const productos = [
     type: "Suplementos",
     category: "Women's Health",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 9,
@@ -70,7 +86,7 @@ export const productos = [
     type: "Suplementos",
     category: "Hair, Skin & Nails",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 10,
@@ -78,7 +94,7 @@ export const productos = [
     type: "Suplementos",
     category: "Children's Health",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 11,
@@ -86,7 +102,7 @@ export const productos = [
     type: "Suplementos",
     category: "Skin Health",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 12,
@@ -94,7 +110,7 @@ export const productos = [
     type: "Suplementos",
     category: "Immunity",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 13,
@@ -102,7 +118,7 @@ export const productos = [
     type: "Suplementos",
     category: "Bone Health",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 14,
@@ -110,7 +126,7 @@ export const productos = [
     type: "Suplementos",
     category: "Immune Support",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 15,
@@ -118,7 +134,7 @@ export const productos = [
     type: "Suplementos",
     category: "Men's Health",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 16,
@@ -126,7 +142,7 @@ export const productos = [
     type: "Suplementos",
     category: "General Health",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 17,
@@ -134,7 +150,7 @@ export const productos = [
     type: "Suplementos",
     category: "Detoxification",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 18,
@@ -142,7 +158,7 @@ export const productos = [
     type: "Suplementos",
     category: "Weight Management",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 19,
@@ -150,7 +166,7 @@ export const productos = [
     type: "Suplementos",
     category: "Weight Management",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 20,
@@ -158,7 +174,7 @@ export const productos = [
     type: "Suplementos",
     category: "Anti-inflammatory",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 21,
@@ -166,7 +182,7 @@ export const productos = [
     type: "Corporal",
     category: "Facial Cleanser",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 22,
@@ -174,7 +190,7 @@ export const productos = [
     type: "Corporal",
     category: "Facial Toner",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 23,
@@ -182,7 +198,7 @@ export const productos = [
     type: "Corporal",
     category: "Whitening Cream",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 24,
@@ -190,7 +206,7 @@ export const productos = [
     type: "Corporal",
     category: "Face Mask",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 25,
@@ -198,7 +214,7 @@ export const productos = [
     type: "Corporal",
     category: "Moisturizer",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 26,
@@ -206,7 +222,7 @@ export const productos = [
     type: "Corporal",
     category: "Hydration",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 27,
@@ -214,7 +230,7 @@ export const productos = [
     type: "Corporal",
     category: "Hair Mask",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 28,
@@ -222,7 +238,7 @@ export const productos = [
     type: "Corporal",
     category: "Hair Care",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 29,
@@ -230,7 +246,7 @@ export const productos = [
     type: "Corporal",
     category: "Hair Serum",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 30,
@@ -238,7 +254,7 @@ export const productos = [
     type: "Corporal",
     category: "Hair Growth",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 31,
@@ -246,7 +262,7 @@ export const productos = [
     type: "Corporal",
     category: "Dry Shampoo",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 32,
@@ -254,7 +270,7 @@ export const productos = [
     type: "Corporal",
     category: "Hair Treatment",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 33,
@@ -262,7 +278,7 @@ export const productos = [
     type: "Corporal",
     category: "Body Scrub",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 34,
@@ -270,7 +286,7 @@ export const productos = [
     type: "Corporal",
     category: "Shower Gel",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 35,
@@ -278,7 +294,7 @@ export const productos = [
     type: "Corporal",
     category: "Intimate Wash",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 36,
@@ -286,7 +302,7 @@ export const productos = [
     type: "Corporal",
     category: "Body Spray",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 37,
@@ -294,7 +310,7 @@ export const productos = [
     type: "Corporal",
     category: "Hand Cream",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 38,
@@ -302,7 +318,7 @@ export const productos = [
     type: "Corporal",
     category: "Lice Treatment",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 39,
@@ -310,7 +326,7 @@ export const productos = [
     type: "Corporal",
     category: "Pain Relief Cream",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 40,
@@ -318,7 +334,7 @@ export const productos = [
     type: "Corporal",
     category: "Muscle Pain Relief",
     brand: "Angels Eternal",
-    image: imgProducto
+    image: imgProducto,
   },
   {
     id: 41,
@@ -326,8 +342,8 @@ export const productos = [
     type: "Corporal",
     category: "Foot Freshener",
     brand: "Angels Eternal",
-    image: imgProducto
-  }
+    image: imgProducto,
+  },
 ];
 
 export const valuesOur = [
@@ -378,13 +394,15 @@ export const events = [
 
 export const contact = [
   {
-    instagram: "",
-    facebook: "",
-    x: "",
-    img: "",
+    id: 1,
+    title: "Correo",
     emailContacto: "contacto@angelseternal.com",
     emailAdmin: "administracion@angelseternal.com",
     emailSales: "ventas@angelseternal.com",
+  },
+  {
+    id: 2,
+    title: "Dirección",
     address:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus sem, pretium eget ornare et, tincidunt id nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus sem, pretium eget ornare et, tincidunt id nisi.",
   },

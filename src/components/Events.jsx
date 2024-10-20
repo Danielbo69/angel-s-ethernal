@@ -1,5 +1,5 @@
 function Events() {
-  return <div style={{backgroundColor: "blue", height: "100vh"}}>Events</div>;
+  return <div className="events">Events</div>;
 }
 
 export default Events;
