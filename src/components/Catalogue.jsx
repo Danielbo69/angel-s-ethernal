@@ -5,7 +5,12 @@ import Col from "react-bootstrap/Col";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import ToggleButton from "react-bootstrap/ToggleButton";
 
-function Catalogue({ productos, renderProduct, setRenderProduct }) {
+function Catalogue({
+  productos,
+  renderProduct,
+  setRenderProduct,
+  windowDimension,
+}) {
   // const [updateRenderProduct, setUpdateRenderProduct] = useState(10);
   const [updateProduct, setUpdateProduct] = useState([]);
   const [radioValue, setRadioValue] = useState("1");
@@ -31,7 +36,9 @@ function Catalogue({ productos, renderProduct, setRenderProduct }) {
       setUpdateProduct(productosAleatorios);
       setRenderProduct(15);
     } else {
-      const newProducts = productosAleatorios.filter((product) => product.type === name);
+      const newProducts = productosAleatorios.filter(
+        (product) => product.type === name
+      );
       setUpdateProduct(newProducts);
       setRenderProduct(15);
     }
@@ -39,26 +46,22 @@ function Catalogue({ productos, renderProduct, setRenderProduct }) {
 
   const loadMoreProducts = () => {
     const numberProducts = renderProduct;
-    setRenderProduct(numberProducts + 5);
+    if (windowDimension.innerWidth <= 720) setRenderProduct(numberProducts + 2);
+    if (windowDimension.innerWidth >= 728 && windowDimension.innerWidth <= 979)
+      setRenderProduct(numberProducts + 3);
+    if (windowDimension.innerWidth > 979) setRenderProduct(numberProducts + 5);
+
     // const numberUpdateProducts = updateRenderProduct;
     // setUpdateRenderProduct(numberUpdateProducts + 5);
   };
 
   return (
     <Container style={{ padding: "3rem" }}>
-      <Row
-        className="w-100 d-flex justify-content-between"
-        style={{ paddingBottom: "2rem", paddingTop: "2rem" }}
-      >
-        <Col className="d-flex justify-content-end" lg={3}>
-          <h1 style={{ borderBottom: "3px solid #4f8b33", fontWeight: "bold" }}>
-            Catalogo
-          </h1>
-        </Col>
-        <Col
-          className="catalogueRadio d-flex justify-content-end align-items-center"
-          lg={8}
-        >
+      <div className="catalogueTop">
+        <h1 style={{ borderBottom: "2px solid #4f8b33", fontWeight: "bold" }}>
+          Catalogo
+        </h1>
+        <div className="catalogueRadio">
           <ButtonGroup>
             {radios.map((radio, idx) => (
               <ToggleButton
@@ -75,8 +78,8 @@ function Catalogue({ productos, renderProduct, setRenderProduct }) {
               </ToggleButton>
             ))}
           </ButtonGroup>
-        </Col>
-      </Row>
+        </div>
+      </div>
       <Row className="catalogue">
         {updateProduct.slice(0, renderProduct).map((producto, index) => (
           <div

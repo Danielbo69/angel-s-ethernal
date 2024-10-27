@@ -1,6 +1,5 @@
 import Container from "react-bootstrap/Container";
 function Contact({ contact }) {
-  console.log(contact);
   return (
     <div>
       <iframe

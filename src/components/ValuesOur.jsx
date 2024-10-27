@@ -10,6 +10,7 @@ function ValuesOur({ valuesOur }) {
       <Container className="valuesOurContainer">
         {valuesOur.map((values) => (
           <div className="card" key={values.id} data-card={values.id}>
+            <img src={values.image} alt={values.title} />
             <h5>{values.title}</h5>
             <p>{values.description}</p>
           </div>

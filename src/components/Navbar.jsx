@@ -2,34 +2,9 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import logo from "../assets/logo.png";
 
-function Navbars() {
-  const links = [
-    {
-      link: "/",
-      text: "Inicio",
-    },
-    {
-      link: "/",
-      text: "Quienes Somos",
-    },
-    {
-      link: "/",
-      text: "Catalogo",
-    },
-    {
-      link: "/",
-      text: "Aliados",
-    },
-    {
-      link: "/",
-      text: "Eventos",
-    },
-    {
-      link: "/",
-      text: "Contactos",
-    },
-  ];
+function Navbars({ links }) {
   return (
     <>
       {["lg"].map((expand) => (
@@ -40,7 +15,9 @@ function Navbars() {
           style={{ height: "80px" }}
         >
           <Container style={{ height: "100%" }}>
-            <Navbar.Brand href="#">Angels Ethternal</Navbar.Brand>
+            <Navbar.Brand>
+              <img src={logo} style={{ width: "100px" }} alt="logo" />
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
