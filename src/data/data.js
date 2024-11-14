@@ -5,6 +5,13 @@ import imgConfianzaTransparencia from "../assets/confianza-transparencia.png";
 import imgCompromisoSocial from "../assets/compromiso-social.png";
 import imgLegadoTradicion from "../assets/legado-tradicion.png";
 import imgVocacionSerivicio from "../assets/vocacion-servicio.png";
+import imgInsuaminca from "../assets/insuaminca.png";
+import imgDrovenCentro from "../assets/drovencentro.png";
+import imgVitalClinic from "../assets/vitalclinic.png";
+import imgGrupocobeca from "../assets/grupocobeca.png";
+import imgDrolanca from "../assets/drolanca.png";
+import imgDrogueriaNena from "../assets/drogueria_nena.png";
+import imgDrocerca from "../assets/drocerca.png";
 
 export const headerData = [
   {
@@ -445,4 +452,14 @@ export const links = [
     link: "/",
     text: "Contactos",
   },
+];
+
+export const droguerias = [
+  { id: 1, image: imgInsuaminca, title: "Insuaminca"},
+  { id: 2, image: imgDrovenCentro, title: "Droven Centro"},
+  { id: 3, image: imgVitalClinic, title: "Vital Clinic"},
+  { id: 4, image: imgGrupocobeca, title: "Grupo Cobeca"},
+  { id: 5, image: imgDrolanca, title: "Drolanca"},
+  { id: 6, image: imgDrogueriaNena, title: "Drogueria Nena"},
+  { id: 7, image: imgDrocerca, title: "Drocerca"},
 ];

@@ -1,14 +1,21 @@
 import { useState, useEffect } from "react";
-import Navbars from "./components/Navbar";
-import Header from "./components/Header";
-import Catalogue from "./components/Catalogue";
-import ValuesOur from "./components/ValuesOur";
-import Events from "./components/Events";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Navbars from "./screens/Navbar";
+import Header from "./screens/Header";
+import Catalogue from "./screens/Catalogue";
+import ValuesOur from "./screens/ValuesOur";
+import Events from "./screens/Events";
+import Contact from "./screens/Contact";
+import Footer from "./screens/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { headerData, valuesOur, productos, contact, links } from "./data/data";
+import {
+  headerData,
+  valuesOur,
+  productos,
+  contact,
+  links,
+  droguerias,
+} from "./data/data";
 
 function App() {
   const [renderProduct, setRenderProduct] = useState(15);
@@ -37,7 +44,7 @@ function App() {
         setRenderProduct={setRenderProduct}
         windowDimension={windowDimension}
       />
-      <Events />
+      <Events droguerias={droguerias} />
       <Contact contact={contact} />
       <Footer />
     </>

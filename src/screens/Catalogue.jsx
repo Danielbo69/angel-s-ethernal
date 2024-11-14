@@ -58,9 +58,9 @@ function Catalogue({
   return (
     <Container style={{ padding: "3rem" }}>
       <div className="catalogueTop">
-        <h1 style={{ borderBottom: "2px solid #4f8b33", fontWeight: "bold" }}>
-          Catalogo
-        </h1>
+        <div className="catalogueTitle">
+          <h1>Catalogo</h1>
+        </div>
         <div className="catalogueRadio">
           <ButtonGroup>
             {radios.map((radio, idx) => (

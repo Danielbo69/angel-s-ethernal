@@ -5,7 +5,6 @@ function ValuesOur({ valuesOur }) {
     <div className="valuesOur">
       <div className="title">
         <h1>Nuestros Valores</h1>
-        <hr />
       </div>
       <Container className="valuesOurContainer">
         {valuesOur.map((values) => (
