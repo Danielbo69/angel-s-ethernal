@@ -4,6 +4,6 @@
   align-items: center !important;
 }
 .modal-dialog {
-  width: 100%;
+  width: 100% !important;
   margin: 0px !important;
 }
