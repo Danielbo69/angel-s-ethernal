@@ -1,30 +1,51 @@
-.CarouselContainer {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
+.slider-container {
+  max-width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 
-.slide-item {
-    width: 100%;
-    height: 350px;
-    object-fit: contain;
+.slider {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
 }
 
-.swiper {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-  }
-  
+.slide {
+  width: 500px;
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+
+.slide img {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.thumbnails {
+  width: 100%;
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  place-items: center;
+  overflow:hidden;
+}
+
+.thumbnails img {
+  width: 120px;
+  height: 100px;
+  margin: 5px;
+  cursor: pointer;
+  object-fit: contain;
+  transition: 0.3s ease;
+}
+
+.thumbnails img:hover {
+ transform:scale(1.1);
+}

@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import ToggleButton from "react-bootstrap/ToggleButton";
+import Modal from "../components/Modal";
 
 function Catalogue({
   productos,
@@ -13,7 +14,10 @@ function Catalogue({
 }) {
   // const [updateRenderProduct, setUpdateRenderProduct] = useState(10);
   const [updateProduct, setUpdateProduct] = useState([]);
+  const [product, setProduct] = useState([]);
   const [radioValue, setRadioValue] = useState("1");
+  const [show, setShow] = useState(false);
+
 
   useEffect(() => {
     filterProducts("Todos");
@@ -55,8 +59,19 @@ function Catalogue({
     // setUpdateRenderProduct(numberUpdateProducts + 5);
   };
 
+  const handleModal = (data) => {
+    setProduct(data);
+    setShow(!show);
+  };
+
+  const handleClose = () => {
+    setShow(false);
+  };
   return (
     <Container style={{ padding: "3rem" }}>
+      {show ? (
+        <Modal show={show} product={product} handleClose={handleClose} />
+      ) : ""}
       <div className="catalogueTop">
         <div className="catalogueTitle">
           <h1>Catalogo</h1>
@@ -87,6 +102,8 @@ function Catalogue({
               index >= renderProduct ? "clipped blurred-bottom" : ""
             }`}
             key={producto.id}
+            onClick={() => handleModal(producto)}
+            style={{cursor: 'pointer'}}
           >
             {" "}
             <img src={producto.image} alt={producto.name} />
