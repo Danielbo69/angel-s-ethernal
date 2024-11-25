@@ -1,4 +1,5 @@
 import Container from "react-bootstrap/Container";
+import '../styles/Contact.css'
 function Contact({ contact }) {
   return (
     <div>

@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import ToggleButton from "react-bootstrap/ToggleButton";
 import Modal from "../components/Modal";
+import "../styles/Catalogue.css";
 
 function Catalogue({
   productos,
@@ -17,7 +17,6 @@ function Catalogue({
   const [product, setProduct] = useState([]);
   const [radioValue, setRadioValue] = useState("1");
   const [show, setShow] = useState(false);
-
 
   useEffect(() => {
     filterProducts("Todos");
@@ -50,10 +49,9 @@ function Catalogue({
 
   const loadMoreProducts = () => {
     const numberProducts = renderProduct;
-    if (windowDimension.innerWidth <= 720) setRenderProduct(numberProducts + 2);
-    if (windowDimension.innerWidth >= 728 && windowDimension.innerWidth <= 979)
-      setRenderProduct(numberProducts + 3);
-    if (windowDimension.innerWidth > 979) setRenderProduct(numberProducts + 5);
+    if (windowDimension.innreWidth <= 600) setRenderProduct(numberProducts + 2);
+    if (windowDimension.innerWidth <= 768) setRenderProduct(numberProducts + 3);
+    if (windowDimension.innerWidth >= 992) setRenderProduct(numberProducts + 5);
 
     // const numberUpdateProducts = updateRenderProduct;
     // setUpdateRenderProduct(numberUpdateProducts + 5);
@@ -71,7 +69,9 @@ function Catalogue({
     <Container style={{ padding: "3rem" }}>
       {show ? (
         <Modal show={show} product={product} handleClose={handleClose} />
-      ) : ""}
+      ) : (
+        ""
+      )}
       <div className="catalogueTop">
         <div className="catalogueTitle">
           <h1>Catalogo</h1>
@@ -103,7 +103,7 @@ function Catalogue({
             }`}
             key={producto.id}
             onClick={() => handleModal(producto)}
-            style={{cursor: 'pointer'}}
+            style={{ cursor: "pointer" }}
           >
             {" "}
             <img src={producto.image} alt={producto.name} />

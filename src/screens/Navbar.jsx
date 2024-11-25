@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import logo from "../assets/logo.png";
+import '../styles/Navbar.css'
 
 function Navbars({ links }) {
   return (

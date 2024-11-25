@@ -1,4 +1,5 @@
 import Container from "react-bootstrap/Container";
+import '../styles/ValuesOur.css'
 
 function ValuesOur({ valuesOur }) {
   return (

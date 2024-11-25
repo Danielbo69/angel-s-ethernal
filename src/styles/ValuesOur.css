@@ -1,0 +1,155 @@
+/* Values Our */
+
+.valuesOur {
+  height: 100%;
+  text-align: center;
+  background: rgb(79, 139, 51);
+  background: linear-gradient(
+    0deg,
+    rgba(79, 139, 51, 1) 60%,
+    rgba(255, 255, 255, 1) 60%
+  );
+}
+
+.valuesOur .title {
+  width: 100%;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+}
+.valuesOur h1 {
+  font-weight: bold;
+  border-bottom: 3px solid #4f8b33;
+}
+
+.valuesOur .valuesOurContainer {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "card1 card2 card3 card4" "card5 card5 card6 card6";
+  gap: 10px;
+  padding: 20px;
+}
+
+[data-card="1"] {
+  grid-column: 1;
+  grid-row: 1;
+  grid-area: card1;
+}
+[data-card="2"] {
+  grid-column: 2;
+  grid-row: 1;
+  grid-area: card2;
+}
+[data-card="3"] {
+  grid-column: 3;
+  grid-row: 1;
+  grid-area: card3;
+}
+[data-card="4"] {
+  grid-column: 4;
+  grid-row: 1;
+  grid-area: card4;
+}
+[data-card="5"] {
+  grid-column: 1;
+  grid-row: 2;
+  grid-area: card5;
+}
+[data-card="6"] {
+  grid-column: 2;
+  grid-row: 2;
+  grid-area: card6;
+}
+
+.valuesOur .card {
+  height: 300px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+}
+
+.valuesOur .card img {
+  width: 100px;
+}
+.valuesOur .card h5 {
+  font-size: 23px;
+  font-weight: bold;
+}
+.valuesOur .card P {
+  font-size: 10px;
+}
+/* Medias Query */
+@media screen and (width <= 600px) {
+  .valuesOur {
+    padding-bottom: 3rem;
+    background: linear-gradient(
+      0deg,
+      rgba(79, 139, 51, 1) 75%,
+      rgba(255, 255, 255, 1) 35%
+    );
+  }
+
+  .valuesOur .card {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+  }
+
+  .valuesOur .card img {
+    width: 85px;
+  }
+  .valuesOur .card h5 {
+    font-size: 100%;
+    font-weight: bold;
+  }
+  .valuesOur .card P {
+    font-size: 0.6rem;
+    text-align: justify;
+  }
+
+  .valuesOur .valuesOurContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "card1 card2" "card3 card4" "card5 card6";
+    padding: 5px;
+  }
+}
+@media screen and (width >= 768px) {
+  .valuesOur .valuesOurContainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "card1 card2 card3" "card4 card5 card6";
+  }
+  .valuesOur .card {
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: auto;
+    place-items: center;
+    place-content: space-between;
+    padding: 10px;
+  }
+  .valuesOur .card P {
+    font-size: 0.6rem;
+    text-align: justify;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (width >= 992px) {
+  .valuesOur .card {
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: auto;
+    place-items: center;
+    place-content: space-evenly;
+    padding: 10px;
+  }
+  .valuesOur .card P {
+    font-size: 0.6rem;
+    text-align: justify;
+    margin: 0px;
+    font-weight: 600;
+  }
+}
+@media screen and (width <= 1200px) {
+  /* … */
+}

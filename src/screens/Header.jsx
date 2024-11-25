@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import imgPrueba from "../assets/IMGPRUEBA.png";
 import portada from "../assets/portada Original.jpg";
+import '../styles/Header.css'
 
 function Header({headerData }) {
 
@@ -15,7 +16,6 @@ function Header({headerData }) {
             <div className="headerPosition">
               <div className="card">
                 <img
-                  style={{ width: "100%", height: "100%", borderRadius: "15px" }}
                   src={imgPrueba}
                   alt="prueba"
                 />
