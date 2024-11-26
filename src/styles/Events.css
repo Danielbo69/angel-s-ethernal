@@ -149,25 +149,32 @@
   }
 
   .droguerias-logo [data-drogs="Insuaminca"] {
-    height: 300px;
+    width: 250px;
+    height: 200px;
   }
   .droguerias-logo [data-drogs="Droven Centro"] {
-    height: 300px;
+    width: 250px;
+    height: 200px;
   }
   .droguerias-logo [data-drogs="Vital Clinic"] {
-    height: 300px;
+    width: 250px;
+    height: 200px;
   }
   .droguerias-logo [data-drogs="Grupo Cobeca"] {
-    height: 300px;
+    width: 250px;
+    height: 200px;
   }
   .droguerias-logo [data-drogs="Drolanca"] {
-    height: 300px;
+    width: 250px;
+    height: 200px;
   }
   .droguerias-logo [data-drogs="Drogueria Nena"] {
-    height: 300px;
+    width: 250px;
+    height: 200px;
   }
   .droguerias-logo [data-drogs="Drocerca"] {
-    height: 300px;
+    width: 250px;
+    height: 200px;
   }
 }
 @media screen and (width >= 768px) {

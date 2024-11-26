@@ -423,7 +423,7 @@ export const contact = [
     id: 2,
     title: "Dirección",
     address:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus sem, pretium eget ornare et, tincidunt id nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus sem, pretium eget ornare et, tincidunt id nisi.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus sem, pretium eget ornare et, tincidunt id nisi.",
   },
 ];
 

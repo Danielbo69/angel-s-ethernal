@@ -11,14 +11,18 @@
 }
 
 .contacto .container {
-  display: flex;
-  place-content: center;
-  padding: 5rem;
+  padding: 1rem;
 }
 
+.contacto .container .contacto-info {
+ display: grid;
+ grid-auto-rows: auto;
+ place-content: center;
+}
 .contacto .container .contacto-info h1 {
   font-weight: bold;
   margin-bottom: 2rem;
+  text-align: center;
 }
 .contacto .container .contacto-info p {
   color: #fff;
