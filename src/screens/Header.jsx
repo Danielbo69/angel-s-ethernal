@@ -11,7 +11,7 @@ function Header({headerData }) {
         <div className="headerTop">
           <img src={portada} alt="Portada" />
         </div>
-        <div className="headerBottom">
+        <div className="headerBottom" id="quienessomos">
           <div className="headerLeft">
             <div className="headerPosition">
               <div className="card">

@@ -405,12 +405,32 @@ export const valuesOur = [
 ];
 
 export const events = [
-  {
-    id: 1,
-    img: "",
-  },
+  { id: 1, image: imgInsuaminca, title: "Insuaminca" },
+  { id: 2, image: imgDrovenCentro, title: "Droven Centro" },
+  { id: 3, image: imgVitalClinic, title: "Vital Clinic" },
+  { id: 4, image: imgGrupocobeca, title: "Grupo Cobeca" },
+  { id: 5, image: imgDrolanca, title: "Drolanca" },
+  { id: 6, image: imgDrogueriaNena, title: "Drogueria Nena" },
+  { id: 7, image: imgDrocerca, title: "Drocerca" },
 ];
-
+export const farmacias = [
+  imgInsuaminca,
+  imgDrovenCentro,
+  imgVitalClinic,
+  imgGrupocobeca,
+  imgDrolanca,
+  imgDrogueriaNena,
+  imgDrocerca,
+];
+export const droguerias = [
+  imgInsuaminca,
+  imgDrovenCentro,
+  imgVitalClinic,
+  imgGrupocobeca,
+  imgDrolanca,
+  imgDrogueriaNena,
+  imgDrocerca,
+];
 export const contact = [
   {
     id: 1,
@@ -429,37 +449,27 @@ export const contact = [
 
 export const links = [
   {
-    link: "/",
+    link: "#inicio",
     text: "Inicio",
   },
   {
-    link: "/",
+    link: "#quienessomos",
     text: "Quienes Somos",
   },
   {
-    link: "/",
+    link: "#catalogo",
     text: "Catalogo",
   },
   {
-    link: "/",
+    link: "#aliados",
     text: "Aliados",
   },
   {
-    link: "/",
+    link: "#eventos",
     text: "Eventos",
   },
   {
-    link: "/",
-    text: "Contactos",
+    link: "#contacto",
+    text: "Contacto",
   },
-];
-
-export const droguerias = [
-  { id: 1, image: imgInsuaminca, title: "Insuaminca"},
-  { id: 2, image: imgDrovenCentro, title: "Droven Centro"},
-  { id: 3, image: imgVitalClinic, title: "Vital Clinic"},
-  { id: 4, image: imgGrupocobeca, title: "Grupo Cobeca"},
-  { id: 5, image: imgDrolanca, title: "Drolanca"},
-  { id: 6, image: imgDrogueriaNena, title: "Drogueria Nena"},
-  { id: 7, image: imgDrocerca, title: "Drocerca"},
 ];

@@ -37,7 +37,7 @@ function Navbars({ links }) {
                     <Nav.Link
                       key={index}
                       href={links.link}
-                      className="align-content-center background-color-black hover"
+                      className="align-content-center background-color-black hover active"
                     >
                       {links.text}
                     </Nav.Link>

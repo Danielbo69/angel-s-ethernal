@@ -15,7 +15,11 @@
   padding: 1rem !important;
 }
 .nav-link:hover {
-  color: #e6efdf;
+  color: #e6efdf !important;
+  background-color: #4f8b33;
+}
+.nav-link:active {
+  color: #e6efdf !important;
   background-color: #4f8b33;
 }
 /* Medias Query */

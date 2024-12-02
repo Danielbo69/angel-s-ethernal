@@ -7,121 +7,120 @@
 .eventsTop {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  /* gap: 12rem; */
-  /* color: #fff; */
+  gap: 10rem;
 }
 
-.Farmacias {
-  /* padding-left: 30rem;
-    display: grid;
-    place-content: center; */
+.farmacias {
+  display: grid;
+  place-items: center;
+  height: 100%;
 }
-.Farmacias .contentVacios {
-  /* width: 250px;
-    height: 55px;
-    background-color: #d8d8d8;
-    margin: 0px 30px 0px 0px; */
+.farmacias .farmacias-logo {
+  width: 100%;
+  gap: 2rem;
+  padding: 2rem 0rem 2rem 0rem;
+  background-color: #4f8b33;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "farmaciaImg farmaciasTitle farmaciasTitle";
+}
+
+.farmacias .farmacias-logo .farmacias-image {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  height: 200px;
+  padding-left: 2rem;
+  grid-area: farmaciaImg;
+}
+.farmacias .farmacias-logo .farmacias-image .image {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+.farmacias .farmacias-logo .farmacias-image .image img {
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: contain;
+}
+.farmacias .farmacias-logo .farmacias-title {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-area: farmaciasTitle;
+}
+.farmacias .farmacias-logo .farmacias-title h1 {
+  color: #fff;
+  font-weight: 650;
+}
+.farmacias .farmacias-logo .farmacias-title .block-gray {
+  width: 100%;
+  height: 65px;
+  background-color: #d9d9d9;
 }
 
 .droguerias {
-  height: 400px;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 30%,
-    rgba(79, 139, 51, 1) 30%,
-    rgba(79, 139, 51, 1) 70%,
-    rgba(255, 255, 255, 1) 70%
-  );
-}
-
-.droguerias-logo {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-areas: "Insuaminca DrovenCentro VitalClinic GrupoCobeca Drolanca DrogueriaNena Drocerca";
-  place-content: center;
   place-items: center;
   height: 100%;
+}
+.droguerias-logo {
+  width: 100%;
   gap: 2rem;
-  padding: 10px;
+  padding: 2rem 0rem 2rem 0rem;
+  background-color: #4f8b33;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "drogueriasTitle drogueriasTitle drogueriasImg";
+}
+.droguerias .droguerias-logo .droguerias-image {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  height: 200px;
+  padding-right: 2rem;
+  grid-area: drogueriasImg;
+}
+.droguerias .droguerias-logo .droguerias-image .image {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+.droguerias .droguerias-logo .droguerias-image .image img {
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: contain;
+}
+.droguerias .droguerias-logo .droguerias-title {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-area: drogueriasTitle;
+}
+.droguerias .droguerias-logo .droguerias-title h1 {
+  color: #fff;
+  font-weight: 650;
+  text-align: end;
+}
+.droguerias .droguerias-logo .droguerias-title .block-gray {
+  width: 100%;
+  height: 65px;
+  background-color: #d9d9d9;
 }
 
-.droguerias-logo [data-drogs="Insuaminca"] {
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  border-radius: 20px;
-  grid-area: Insuaminca;
-  border: 1px solid #ccc;
-  padding: 20px;
-  box-shadow: 0px 0px 20px 16px rgba(17, 17, 26, 0.08);
-}
-.droguerias-logo [data-drogs="Droven Centro"] {
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  border-radius: 20px;
-  grid-area: DrovenCentro;
-  border: 1px solid #ccc;
-  padding: 20px;
-  box-shadow: 0px 0px 20px 16px rgba(17, 17, 26, 0.08);
-}
-.droguerias-logo [data-drogs="Vital Clinic"] {
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  border-radius: 20px;
-  grid-area: VitalClinic;
-  border: 1px solid #ccc;
-  padding: 20px;
-  box-shadow: 0px 0px 20px 16px rgba(17, 17, 26, 0.08);
-}
-.droguerias-logo [data-drogs="Grupo Cobeca"] {
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  border-radius: 20px;
-  grid-area: GrupoCobeca;
-  border: 1px solid #ccc;
-  padding: 20px;
-  box-shadow: 0px 0px 20px 16px rgba(17, 17, 26, 0.08);
-}
-.droguerias-logo [data-drogs="Drolanca"] {
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  border-radius: 20px;
-  grid-area: Drolanca;
-  border: 1px solid #ccc;
-  padding: 20px;
-  box-shadow: 0px 0px 20px 16px rgba(17, 17, 26, 0.08);
-}
-.droguerias-logo [data-drogs="Drogueria Nena"] {
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  border-radius: 20px;
-  grid-area: DrogueriaNena;
-  border: 1px solid #ccc;
-  padding: 20px;
-  box-shadow: 0px 0px 20px 16px rgba(17, 17, 26, 0.08);
-}
-.droguerias-logo [data-drogs="Drocerca"] {
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  border-radius: 20px;
-  grid-area: Drocerca;
-  border: 1px solid #ccc;
-  padding: 20px;
-  box-shadow: 0px 0px 20px 16px rgba(17, 17, 26, 0.08);
+.container-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
 }
 
 .eventsBottom {
   display: grid;
-  grid-template-rows: repeat(2);
   place-items: center;
   height: 100%;
+  margin-top: 5rem;
 }
 .eventsBottom h1 {
   padding: 10px;
@@ -131,50 +130,51 @@
 }
 /* Medias Query */
 @media screen and (width <= 600px) {
-  .droguerias {
+  .eventsTop {
+    gap: 5rem;
+  }
+  .farmacias-logo {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "farmaciaImg farmaciaImg farmaciaImg" "farmaciasTitle farmaciasTitle farmaciasTitle" !important;
+  }
+  .farmacias .farmacias-logo .farmacias-image {
     height: 100%;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 1) 30%,
-      rgba(79, 139, 51, 1) 30%,
-      rgba(79, 139, 51, 1) 70%,
-      rgba(255, 255, 255, 1) 70%
-    );
+    padding: 0px;
+  }
+  .farmacias .farmacias-logo .farmacias-image .image img {
+    width: 400px;
+    height: 250px;
+  }
+
+  .farmacias .farmacias-logo .farmacias-title {
+    display: flex;
+    flex-direction: column;
+    place-content: space-evenly;
+  }
+  .farmacias .farmacias-logo .farmacias-title h1 {
+    padding-left: 2rem;
   }
 
   .droguerias-logo {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "Insuaminca" "DrovenCentro" "VitalClinic" "GrupoCobeca " "Drolanca" "DrogueriaNena" "Drocerca";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "drogueriasTitle drogueriasTitle drogueriasTitle" " drogueriasImg drogueriasImg drogueriasImg" !important;
   }
 
-  .droguerias-logo [data-drogs="Insuaminca"] {
-    width: 250px;
-    height: 200px;
+  .droguerias .droguerias-logo .droguerias-title {
+    display: flex;
+    flex-direction: column;
+    place-content: space-evenly;
   }
-  .droguerias-logo [data-drogs="Droven Centro"] {
-    width: 250px;
-    height: 200px;
+  .droguerias .droguerias-logo .droguerias-title h1 {
+    padding-right: 2rem;
   }
-  .droguerias-logo [data-drogs="Vital Clinic"] {
-    width: 250px;
-    height: 200px;
+  .droguerias .droguerias-logo .droguerias-image {
+    height: 100%;
+    padding: 0px;
   }
-  .droguerias-logo [data-drogs="Grupo Cobeca"] {
-    width: 250px;
-    height: 200px;
-  }
-  .droguerias-logo [data-drogs="Drolanca"] {
-    width: 250px;
-    height: 200px;
-  }
-  .droguerias-logo [data-drogs="Drogueria Nena"] {
-    width: 250px;
-    height: 200px;
-  }
-  .droguerias-logo [data-drogs="Drocerca"] {
-    width: 250px;
-    height: 200px;
+  .droguerias .droguerias-logo .droguerias-image .image img {
+    width: 400px;
+    height: 250px;
   }
 }
 @media screen and (width >= 768px) {

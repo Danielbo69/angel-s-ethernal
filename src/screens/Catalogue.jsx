@@ -72,7 +72,7 @@ function Catalogue({
       ) : (
         ""
       )}
-      <div className="catalogueTop">
+      <div className="catalogueTop" id="catalogo">
         <div className="catalogueTitle">
           <h1>Catalogo</h1>
         </div>

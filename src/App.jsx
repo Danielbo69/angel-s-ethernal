@@ -14,7 +14,9 @@ import {
   productos,
   contact,
   links,
+  events,
   droguerias,
+  farmacias
 } from "./data/data";
 
 function App() {
@@ -44,7 +46,7 @@ function App() {
         setRenderProduct={setRenderProduct}
         windowDimension={windowDimension}
       />
-      <Events droguerias={droguerias} />
+      <Events events={events} droguerias={droguerias} farmacias={farmacias} />
       <Contact contact={contact} />
       <Footer />
     </>

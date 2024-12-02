@@ -22,9 +22,41 @@
 .footer .image img {
   width: 200px;
 }
+
+.footer [data-top="top"] {
+  display: flex;
+  place-content: center;
+}
+.footer [data-top="top"] i {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  margin: 0.5rem;
+  background-color: #4f8b33;
+  border-radius: 50%;
+}
+
+.footer [data-bottom="bottom"] {
+  display: flex;
+  place-content: end;
+  margin-bottom: 1rem;
+}
+.footer [data-bottom="bottom"] i {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  background-color: #4f8b33;
+  margin-left: 0.5rem;
+  border-radius: 50%;
+}
+
 .footer .content-enlaces-redes {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "enlaces enlaces condiciones";
   justify-items: center;
   grid-area: contentEnlaces;
@@ -35,11 +67,32 @@
   place-content: center;
   grid-area: enlaces;
 }
+.footer .enlaces a {
+  list-style: none;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.644);
+}
+.footer .enlaces a:hover {
+  color: #fff;
+  background-color: #4f8b33;
+}
 .footer .redes-condiciones {
   display: flex;
   flex-direction: column;
   place-content: center;
   grid-area: condiciones;
+}
+.footer .terminospolitica {
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+}
+.footer .terminospolitica a {
+  color: rgba(0, 0, 0, 0.644);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  
 }
 .footer .copyright {
   display: flex;
@@ -51,12 +104,22 @@
 
 /* Medias Query */
 @media screen and (width <= 600px) {
+  .footer [data-top="top"] {
+    display: flex;
+  }
+  .footer [data-bottom="bottom"] {
+    display: none;
+  }
 }
 @media screen and (width >= 768px) {
-  /* … */
+  .footer [data-top="top"] {
+    display: none;
+  }
+  .footer [data-bottom="bottom"] {
+    display: flex;
+  }
 }
 @media screen and (width >= 992px) {
-  /* … */
 }
 @media screen and (width <= 1200px) {
   /* … */
