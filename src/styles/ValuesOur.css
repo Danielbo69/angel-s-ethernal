@@ -24,9 +24,6 @@
 
 .valuesOur .valuesOurContainer {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "card1 card2 card3 card4" "card5 card5 card6 card6";
   gap: 10px;
   padding: 20px;
 }
@@ -135,6 +132,11 @@
   }
 }
 @media screen and (width >= 992px) {
+  .valuesOur .valuesOurContainer {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "card1 card2 card3 card4" "card5 card5 card6 card6";
+  }
   .valuesOur .card {
     border-radius: 10px;
     display: grid;
@@ -151,5 +153,5 @@
   }
 }
 @media screen and (width <= 1200px) {
-  /* … */
+
 }
