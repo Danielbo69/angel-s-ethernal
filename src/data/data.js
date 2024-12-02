@@ -449,7 +449,7 @@ export const contact = [
 
 export const links = [
   {
-    link: "#inicio",
+    link: "/",
     text: "Inicio",
   },
   {
