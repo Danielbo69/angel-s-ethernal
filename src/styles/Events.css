@@ -142,7 +142,7 @@
     padding: 0px;
   }
   .farmacias .farmacias-logo .farmacias-image .image img {
-    width: 400px;
+    width: 300px;
     height: 250px;
   }
 
@@ -173,12 +173,47 @@
     padding: 0px;
   }
   .droguerias .droguerias-logo .droguerias-image .image img {
-    width: 400px;
+    width: 300px;
     height: 250px;
   }
 }
 @media screen and (width >= 768px) {
-  /* … */
+  .eventsTop {
+    gap: 5rem;
+  }
+  .farmacias .farmacias-logo .farmacias-image {
+    /* height: 100%; */
+    padding-left: 2rem;
+  }
+  .farmacias .farmacias-logo .farmacias-image .image img {
+    width: 300px;
+    height: 280px;
+  }
+
+  .farmacias .farmacias-logo .farmacias-title {
+    display: flex;
+    flex-direction: column;
+    place-content: space-evenly;
+  }
+
+  .droguerias .droguerias-logo .droguerias-title {
+    display: flex;
+    flex-direction: column;
+    place-content: space-evenly;
+  }
+  .droguerias .droguerias-logo .droguerias-image {
+    padding-right: 2rem;
+  }
+  .droguerias .droguerias-logo .droguerias-image .image img {
+    width: 300px;
+    height: 280px;
+  }
+  .container-block {
+    gap: 1rem;
+  }
+  .container-block .block-gray{
+    height: 50px !important;
+  }
 }
 @media screen and (width >= 992px) {
   /* … */

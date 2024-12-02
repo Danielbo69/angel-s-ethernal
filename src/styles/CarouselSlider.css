@@ -112,13 +112,14 @@
 
   .thumbnails {
     height: auto;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     margin-bottom: 2rem;
-    gap: 10px;
+    gap: 0px;
+    padding: 10px;
   }
 
   .thumbnails img {
-    width: 100px;
+    width: 95px;
     height: 100px;
   }
 }

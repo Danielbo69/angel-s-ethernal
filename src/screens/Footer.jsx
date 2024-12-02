@@ -31,12 +31,12 @@ function Footer() {
         </div>
         <div className="content-enlaces-redes">
           <div className="enlaces">
-            <a href="http://">Inicio</a>
-            <a href="http://">Quienes Somos</a>
-            <a href="http://">Catalogo</a>
-            <a href="http://">Aliados</a>
-            <a href="http://">Eventos</a>
-            <a href="http://">Contactos</a>
+            <a href="/">Inicio</a>
+            <a href="#quienessomos">Quienes Somos</a>
+            <a href="#catalogo">Catalogo</a>
+            <a href="#aliados">Aliados</a>
+            <a href="#eventos">Eventos</a>
+            <a href="#contacto">Contacto</a>
           </div>
           <div className="redes-condiciones">
             <div className="redes" data-bottom="bottom">

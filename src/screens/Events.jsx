@@ -15,7 +15,7 @@ function Events({ events, droguerias, farmacias }) {
             </div>
             <div className="farmacias-title">
               <h1>Farmacias</h1>
-              <div className="d-flex justify-between gap-5">
+              <div className="container-block">
                 <div className="block-gray"></div>
                 <div className="block-gray"></div>
                 <div className="block-gray"></div>
