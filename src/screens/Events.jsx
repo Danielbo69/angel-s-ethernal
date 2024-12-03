@@ -4,8 +4,8 @@ import Carousel from "../components/Carousel";
 import "../styles/Events.css";
 function Events({ events, droguerias, farmacias }) {
   return (
-    <div className="events">
-      <div className="eventsTop" id="aliados">
+    <div className="events" id="aliados">
+      <div className="eventsTop" >
         <div className="farmacias">
           <div className="farmacias-logo">
             <div className="farmacias-image">
@@ -46,8 +46,8 @@ function Events({ events, droguerias, farmacias }) {
           </div>
         </div>
       </div>
-      <br />
-      <div className="eventsBottom" id="eventos">
+      <br id="eventos"/>
+      <div className="eventsBottom" >
         <div>
           <h1>Eventos</h1>
         </div>

@@ -449,27 +449,27 @@ export const contact = [
 
 export const links = [
   {
-    link: "/",
+    link: "inicio",
     text: "Inicio",
   },
   {
-    link: "#quienessomos",
+    link: "quienessomos",
     text: "Quienes Somos",
   },
   {
-    link: "#catalogo",
+    link: "catalogo",
     text: "Catalogo",
   },
   {
-    link: "#aliados",
+    link: "aliados",
     text: "Aliados",
   },
   {
-    link: "#eventos",
+    link: "eventos",
     text: "Eventos",
   },
   {
-    link: "#contacto",
+    link: "contacto",
     text: "Contacto",
   },
 ];

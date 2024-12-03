@@ -8,15 +8,17 @@
 
 .footer .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "image contentEnlaces contentEnlaces" "copyright copyright copyright";
+  grid-template-areas: "image image contentEnlaces contentEnlaces"
+"copyright copyright copyright copyright" ;
   padding-top: 3rem;
 }
 
 .footer .image {
   display: flex;
+  flex-direction: column;
   place-content: center;
-  align-items: center;
+  place-items: center;
+  gap: 15px;
   grid-area: image;
 }
 .footer .image img {
@@ -56,31 +58,32 @@
 
 .footer .content-enlaces-redes {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "enlaces enlaces condiciones";
-  justify-items: center;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "enlaces enlaces enlaces condiciones condiciones condiciones";
   grid-area: contentEnlaces;
 }
 .footer .enlaces {
   display: flex;
   flex-direction: column;
   place-content: center;
+  place-items: start;
   grid-area: enlaces;
 }
-.footer .enlaces a {
-  list-style: none;
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.644);
+.footer .enlaces label {
+  padding: 5px;
 }
-.footer .enlaces a:hover {
+.footer .enlaces label:hover {
   color: #fff;
   background-color: #4f8b33;
+  cursor: pointer;
 }
 .footer .redes-condiciones {
-  display: flex;
-  flex-direction: column;
-  place-content: center;
+  display: grid;
+  place-content: start;
   grid-area: condiciones;
+}
+.footer .redes a:hover {
+  opacity: 0.8;
 }
 .footer .terminospolitica {
   text-align: end;
@@ -92,7 +95,10 @@
   font-size: 1.1rem;
   margin-bottom: 1rem;
   text-decoration: none;
-  
+  font-weight: 500;
+}
+.footer .terminospolitica a:hover {
+  color: #4f8b33;
 }
 .footer .copyright {
   display: flex;
@@ -104,11 +110,46 @@
 
 /* Medias Query */
 @media screen and (width <= 600px) {
+  .footer .container {
+    grid-auto-rows: auto;
+    grid-template-areas: "image contentEnlaces contentEnlaces" "copyright copyright copyright";
+  }
+  .footer .content-enlaces-redes {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "enlaces" "condiciones";
+    gap: 10px;
+    padding-right: 2rem;
+  }
+
+  .footer .image {
+    place-content: start;
+  }
+
+  .footer .redes-condiciones {
+    place-content: end;
+  }
+
+  .footer .content-enlaces-redes .enlaces {
+    place-items: end;
+  }
+
+  .footer .terminospolitica a {
+    width: 100%;
+    font-size: 1rem !important;
+  }
   .footer [data-top="top"] {
     display: flex;
   }
   .footer [data-bottom="bottom"] {
     display: none;
+  }
+
+  .copyright {
+    margin: 1rem !important;
+  }
+  .copyright p {
+    text-align: center;
+    font-size: 0.76rem;
   }
 }
 @media screen and (width >= 768px) {

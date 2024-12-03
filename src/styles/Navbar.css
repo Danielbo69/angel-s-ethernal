@@ -1,4 +1,34 @@
 /* NAVBAR */
+
+/* Estilo para el Navbar fijo con transición suave */
+.navbar-expand-lg {
+  transition: top 0.3s ease-in-out, background-color 0.3s ease; /* Transición suave para el desplazamiento */
+}
+
+/* Clase para móviles */
+.navbar-mobile {
+  background-color: #fff; /* Color de fondo para móviles */
+}
+
+/* Clase para iPads */
+.navbar-ipad {
+  background-color: #fff; /* Color de fondo para iPad */
+}
+
+/* Clase para escritorio */
+.navbar-desktop {
+  background-color: #ffffff; /* Color de fondo para escritorio */
+}
+
+/* Estilo para cuando el Navbar es fijo */
+.navbar-expand-lg .fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999; /* Aseguramos que el Navbar quede por encima de otros elementos */
+}
+
 .bg-body-tertiary {
   background-color: #fff !important;
 }
@@ -23,7 +53,10 @@
   background-color: #4f8b33;
 }
 /* Medias Query */
-@media screen and (width <= 600px) {
+@media screen and (width >= 600px) {
+  .navbar-brand img {
+    width: 100px;
+  }
 }
 @media screen and (width >= 768px) {
   /* … */

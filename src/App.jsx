@@ -48,7 +48,7 @@ function App() {
       />
       <Events events={events} droguerias={droguerias} farmacias={farmacias} />
       <Contact contact={contact} />
-      <Footer />
+      <Footer links={links} />
     </>
   );
 }

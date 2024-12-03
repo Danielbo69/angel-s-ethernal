@@ -3,14 +3,19 @@ import Container from "react-bootstrap/Container";
 import "../styles/Footer.css";
 import { FaXTwitter, FaInstagram, FaFacebookF } from "react-icons/fa6";
 
-function Footer() {
+function Footer({ links }) {
+  // Función para manejar el scroll suave
+  const scrollToSection = (link) => {
+    const element = document.getElementById(link);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="footer">
       <Container>
-        <div>
-          <div className="image">
-            <img src={logo} alt="logo" />
-          </div>
+        <div className="image">
+          <img src={logo} alt="logo" />
           <div className="redes" data-top="top">
             <a href="http://" target="_blank" rel="noopener noreferrer">
               <i>
@@ -31,12 +36,11 @@ function Footer() {
         </div>
         <div className="content-enlaces-redes">
           <div className="enlaces">
-            <a href="/">Inicio</a>
-            <a href="#quienessomos">Quienes Somos</a>
-            <a href="#catalogo">Catalogo</a>
-            <a href="#aliados">Aliados</a>
-            <a href="#eventos">Eventos</a>
-            <a href="#contacto">Contacto</a>
+            {links.map((links, index) => (
+              <label key={index} onClick={() => scrollToSection(links.link)}>
+                {links.text}
+              </label>
+            ))}
           </div>
           <div className="redes-condiciones">
             <div className="redes" data-bottom="bottom">

@@ -3,18 +3,24 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  position: relative;
 }
 
 .headerTop {
   padding: 0px;
+  overflow: hidden; /* Asegura que la imagen no se desborde */
+  transition: background-position 0.3s ease; /* Transición para suavizar el cambio de la imagen de fondo */
 }
+
 .headerTop img {
   width: 100%;
+  transition: transform 0.3s ease; /* Transición para la imagen */
 }
 
 .headerBottom {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  transition: margin-top 0.3s ease; /* Transición suave cuando el navbar se fija */
 }
 
 .headerBottom .headerLeft {
@@ -22,6 +28,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .headerBottom .headerLeft .headerPosition {
   position: absolute;
   margin-top: -100px;
@@ -34,6 +41,7 @@
   border-radius: 25px;
   padding: 15px;
 }
+
 .headerBottom .headerLeft .card img {
   width: 100%;
   height: 100%;
@@ -46,19 +54,18 @@
   place-content: center;
   gap: 10px;
 }
+
 .headerBottom .headerRight .mision-vision {
   width: 100%;
 }
 
 .headerBottom .headerRight .mision-vision h1 {
   font-weight: bold;
-  /* padding-bottom: 0.5rem; */
 }
 
 .headerBottom .headerRight .mision-vision hr {
   width: 50%;
   border-top: 2px solid #4f8b33;
-  opacity: 1;
 }
 
 .headerBottom .headerRight .mision-vision p {
@@ -68,14 +75,16 @@
   font-family: "Monserrat, sans-serif";
   padding: 1rem 0px 0px 0px;
 }
+
 /* Medias Query */
 @media screen and (width <= 600px) {
   .header {
     display: flex;
     flex-direction: column;
   }
+
   .headerBottom .headerLeft .headerPosition {
-    top: 210px;
+    top: 130px;
     right: 30px;
     margin: 0px;
   }
@@ -88,6 +97,7 @@
   .headerBottom .headerRight .mision-vision hr {
     width: 70%;
   }
+
   .headerBottom {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -95,34 +105,32 @@
   .headerBottom .headerRight {
     width: 100%;
     height: 110vh;
-    /* position: relative;
-    top: 60px;
-    bottom: 0;
-    left: 30px;
-    padding: 0px; */
     padding: 0rem 0rem 0rem 3rem;
     gap: 10px;
     margin: 0px;
-    margin-bottom: 0px;
   }
+
   .headerBottom .headerRight .mision-vision {
     display: flex;
     flex-direction: column;
     justify-content: end;
   }
+
   .headerBottom .headerRight .mision-vision p {
     width: 100%;
     text-align: justify;
     padding: 0rem 4rem 0px 0px;
   }
 }
+
 @media screen and (width >= 768px) {
   .header {
     display: flex;
     flex-direction: column;
   }
+
   .headerBottom .headerLeft .headerPosition {
-    top: 480px;
+    top: 390px;
   }
 
   .headerBottom .headerLeft .card {
@@ -133,6 +141,7 @@
   .headerBottom .headerRight .mision-vision hr {
     width: 70%;
   }
+
   .headerBottom {
     gap: 20px;
   }
@@ -152,12 +161,14 @@
     text-align: justify;
   }
 }
+
 @media screen and (width >= 992px) {
   .header {
     display: flex;
     flex-direction: column;
     margin-bottom: 10rem;
   }
+
   .headerBottom .headerLeft .headerPosition {
     margin-top: 0px;
     top: auto;
@@ -171,6 +182,7 @@
   .headerBottom .headerRight .mision-vision hr {
     width: 50%;
   }
+
   .headerBottom {
     gap: 0px;
   }

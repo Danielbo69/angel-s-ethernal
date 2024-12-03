@@ -66,13 +66,13 @@ function Catalogue({
     setShow(false);
   };
   return (
-    <Container style={{ padding: "3rem" }}>
+    <Container style={{ padding: "3rem" }} id="catalogo">
       {show ? (
         <Modal show={show} product={product} handleClose={handleClose} />
       ) : (
         ""
       )}
-      <div className="catalogueTop" id="catalogo">
+      <div className="catalogueTop">
         <div className="catalogueTitle">
           <h1>Catalogo</h1>
         </div>

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* Medias Query */
 @media (min-width: 768px) and (max-width: 979px) {
   /* .droguerias {
@@ -6,7 +10,7 @@
   } */
 }
 
-@media (max-width: 720px) {
+/* @media (max-width: 720px) {
 
   .contacto {
     grid-template-columns: repeat(1, 1fr);
@@ -45,4 +49,4 @@
     font-size: 12px;
     margin: 3rem 0px 1rem 0px;
   }
-}
+} */
