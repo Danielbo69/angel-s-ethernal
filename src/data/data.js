@@ -423,13 +423,20 @@ export const farmacias = [
   imgDrocerca,
 ];
 export const droguerias = [
-  imgInsuaminca,
-  imgDrovenCentro,
-  imgVitalClinic,
-  imgGrupocobeca,
-  imgDrolanca,
-  imgDrogueriaNena,
-  imgDrocerca,
+  {
+   title: "Insuaminca", image: imgInsuaminca},
+  {
+   title: "Droven Centro", image: imgDrovenCentro},
+  {
+   title: "Vital Clinic", image: imgVitalClinic},
+  {
+   title: "Grupo Cobeca", image: imgGrupocobeca},
+  {
+   title: "Drolanca", image: imgDrolanca},
+  {
+   title: "Drogueria Nena", image: imgDrogueriaNena},
+  {
+   title: "Drocerca", image: imgDrocerca},
 ];
 export const contact = [
   {

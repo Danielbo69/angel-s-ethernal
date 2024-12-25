@@ -1,0 +1,91 @@
+.horizontal-scroll {
+  width: 100%;
+  text-align: center;
+}
+
+.top-bar {
+  display: flex;
+  place-content: space-between;
+  place-items: center;
+  padding: 0px 30px 0px 30px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 650;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.scroll-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#icons {
+  color: #4f8b33;
+  font-size: 2rem;
+}
+
+#icons:hover {
+  opacity: 0.9;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-behavior: smooth;
+}
+
+/* Cambiar el color del scroll en navegadores compatibles */
+.scroll-container::-webkit-scrollbar {
+  height: 10px; /* Altura del scroll horizontal */
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color del fondo del scrollbar */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #4f8b33; /* Color del pulgar del scrollbar */
+  border-radius: 20px; /* Bordes redondeados del pulgar */
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #4f8b33; /* Color del pulgar al pasar el mouse */
+}
+
+/* Para navegadores que soportan scrollbar-color */
+.scroll-container {
+  scrollbar-color: #4f8b33 #f1f1f1; /* Pulgar y fondo */
+  scrollbar-width: thin; /* Estilo del scrollbar en Firefox */
+}
+
+.item {
+  max-width: 99vw;
+  min-width: 200px;
+  display: flex;
+  text-align: center;
+  gap: 1rem;
+}
+
+.item img {
+  width: 300px;
+  height: 230px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.item-title {
+  margin-top: 5px;
+  font-size: 16px;
+}
